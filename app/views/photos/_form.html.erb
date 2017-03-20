@@ -22,14 +22,9 @@
   </div>
 
   <div class="form-group">
-      <%= form_for @user do |f| %>
-          <div>
-            <%= f.label :file, 'Upload Your image:' %>
-            <%= f.filepicker_field :file, dragdrop: true %>
-          </div>
-          <%= f.submit %>
-      <% end %>
-     </div>
+    <%= f.label :file, 'Upload Your image:' %>
+    <%= f.filepicker_field :file, dragdrop: true %>
+  </div>
 
   <div class="actions">
     <%= f.submit class:'btn btn-default' %>
