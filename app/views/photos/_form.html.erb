@@ -22,9 +22,14 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :file %>
-    <%= f.filepicker_field :file,onchange: "validateFiles(this);",data: { max_file_size: 5.megabytes }, class:'form-control', dragdrop: true,required: true %>
-  </div>
+      <%= form_for @user do |f| %>
+          <div>
+            <%= f.label :file, 'Upload Your image:' %>
+            <%= f.filepicker_field :file, dragdrop: true %>
+          </div>
+          <%= f.submit %>
+      <% end %>
+     </div>
 
   <div class="actions">
     <%= f.submit class:'btn btn-default' %>
