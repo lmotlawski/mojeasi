@@ -1,24 +1,20 @@
-# README
+# Architektura serwisów internetowych 2017
+Projekt na zaliczenie
+Patryk Adler
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Galeria zdjeć / Photo Gallery
+Aplikacja umożliwa zalogowanym i zarejestrowanym użytkownikom upload zdjęć(jpg,gif,png do 5mb) i ich opisów.
+Służy jako publiczna galeria. Użytkownicy mają możliwość dodawania/usuwania/edycji własnych zdjęć.
+Admin(login: admin@admin.pl) ma możliwość zarządzania wszystkimi zdjęciami.
 
-Things you may want to cover:
+| Wersja Ruby   | Wersja Rails  |                Baza danych                 | Framework |           Dodatkowe gemy           |
+| ------------- |:-------------:|:-------------------------------------------|:---------:|:----------------------------------:|
+|      2.4.0    | 5.0.2         | PostgreSQL - Heroku                         | Bootstrap | devise, carrierwave, cloudinary |
 
-* Ruby version
+Devise - autoryzacja i autentykacja użytkowników
 
-* System dependencies
+Carrierwave - upload plików tj. zdjęć
 
-* Configuration
+Cloudinary - ustawienie uploadu plików na hosting clodinary.com na potrzeby heroku (współpracuje z Carrierwave)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Link do heroku: https://salty-waters-65995.herokuapp.com
