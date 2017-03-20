@@ -12,7 +12,7 @@ gem 'rails', '~> 5.0.2'
 gem 'pg'
 gem 'carrierwave'
 gem 'devise'
-gem 'filepicker-rails'
+gem 'cloudinary'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

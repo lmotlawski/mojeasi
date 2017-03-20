@@ -3,14 +3,12 @@
 <div class="row">
   <div class="col-xs-9">
     <%= image_tag(@photo.file, :width => "100%") if @photo.file.present? %>
-    <%= filepicker_image_tag @photo.file, w: 160, h: 160, fit: 'clip' %>
   </div>
 
   <div class="col-xs-3">
     <p><b>Title: </b><%= @photo.title%></p>
     <p><b>Description: </b><%= @photo.description %></p>
     <p><b>1. Img url:</b><%= @photo.file %></p>
-    <p><b>2. Img url:</b><%= @photo.file_url %></p>
     <p>
       <%= link_to 'Edit', edit_photo_path(@photo) %> |
       <%= link_to 'Delete', @photo, confirm: 'Are you sure?', method: :delete %> |
